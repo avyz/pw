@@ -12,5 +12,14 @@ push.setVapidDetails(
   vapidKeys.privateKey
 );
 
-let sub = {};
+let sub = {
+  endpoint:
+    "https://fcm.googleapis.com/fcm/send/d_Ep7jASVXw:APA91bGGuTCPPgVea2wUoMmLd3dvK1oSDBMLiH-vNuLcNTXrKDuQGacKCmtqFeivOPw-cg9Z0p2ztxOf0o_4C16FuqlFGui3syQnQRpsf9KKsL21Z5zbqeDItifoRGFY4FhriDEeNuQ2",
+  expirationTime: null,
+  keys: {
+    p256dh:
+      "BPetzJ_N5c9NnSpxb9EEkYaUkIzBMZM_VathJ8P-QK_mm5NJ_0TjWq1hELXuZRrM0VJVH3DtaT8MtY-ZyonJI2I",
+    auth: "zWzVqBpdllekvvZ29X1pMQ",
+  },
+};
 push.sendNotification(sub, "test message");
